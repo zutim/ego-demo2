@@ -13,44 +13,6 @@ ego demo project
 
 ### 启动
 ```
-go run main.go
+go run cmd/main.go
 ```
 
-### 接口
-- 用户注册   
-```
-// 请求地址
-localhost:8081/v1/user/register
-// 请求方式
-post(json)
-// 请求参数
-{
-	"email":"hongker@github.com",
-	"pass":"123456"
-}
-// 响应参数
-{
-    "status_code": 0,
-    "message": "success",
-    "data": null,
-    "meta": {
-        "trace": {
-            "trace_id": "TraceIdeea596a4-ef3c-46ea-90db-2c20e56fc725",
-            "request_id": "request:2d892e13-1ab1-4b16-8d55-4284cf38ff4f"
-        },
-        "pagination": null
-    }
-}
-```
-
-- 用户登录
-```
-localhost:8081/v1/user/login
-// 请求方式
-post(json)
-// 请求参数
-{
-	"email":"hongker@github.com",
-	"pass":"123456"
-}
-```
